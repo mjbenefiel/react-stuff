@@ -5,9 +5,9 @@ console.log("app.js is running");
 // JSX - JavaScript XML - JS syntax extension
 
 var template = React.createElement(
-  "p",
+  "h1",
   null,
-  "Does thic change?"
+  "Indecision App"
 );
 
 var appRoot = document.getElementById("app");
