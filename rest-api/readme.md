@@ -19,4 +19,12 @@ Update, Delete
 http://www.codingninja.com/api/ninjas/id
 
 
+MongoDB
+
+User model - Model defines collection
+User schema - Schema defines structure
+
+
+Mongoose - adds layer of methods to save, edit, retrieve and delete data from MongoDO. Allows us to easily create models and schema.
+
 
