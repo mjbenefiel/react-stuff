@@ -1,5 +1,7 @@
 Notes
 
+How I spend my free time...
+
 GET, POST, PUT, DELETE
 
 POST - create new data
@@ -11,7 +13,7 @@ Create, Read, Update, Delete (CRUD)
 
 API Routes
 Create, Read
-http://www.codingninja.com/api/ninjas
+http://www.codingninja.com/api/ninjas (just for demo purposes, not a real endpoint)
 
 Update, Delete
 http://www.codingninja.com/api/ninjas/id
