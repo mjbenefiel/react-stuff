@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 // create ninja schema & model
 
-constNinjaSchema = new Schema({
+const NinjaSchema = new Schema({
     name: {
         type: String,
         required: [true, 'name required']
