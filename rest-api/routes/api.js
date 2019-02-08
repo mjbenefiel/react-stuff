@@ -10,25 +10,30 @@ router.get("/ninjas", function(req, res, next) {
 // add a new ninja to db
 router.post("/ninjas", function(req, res, next) {
   //   console.log(req.body);
-  Ninja.create(req.body).then(function(ninja){
+  Ninja.create(req.body)
+    .then(function(ninja) {
       res.send(ninja);
-  }).catch(next);
-//   var ninja = new Ninja(req.body);
-//   ninja.save();  
+    })
+    .catch(next);
+  //   var ninja = new Ninja(req.body);
+  //   ninja.save();
 });
 
 // update ninja in db
 router.put("/ninjas/:id", function(req, res, next) {
-  res.send({ type: "PUT" });
+  Ninja.findByIdAndUpdate({ _id: req.params.id }, req.body).then(function() {
+    Ninja.findOne({ _id: req.params.id }).then(function(ninja) {
+      res.send(ninja);
+    });
+  });
 });
 
 // delete ninja from db
 router.delete("/ninjas/:id", function(req, res, next) {
-//    console.log(req.params.id);
-Ninja.findOneAndDelete({_id:req.params.id}).then(function(ninja){
-    res.send(ninja)
-}) 
-  
+  //    console.log(req.params.id);
+  Ninja.findOneAndDelete({ _id: req.params.id }).then(function(ninja) {
+    res.send(ninja);
+  });
 });
 
 module.exports = router;
