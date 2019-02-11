@@ -17,6 +17,8 @@ Component state
 - is a JS object that's going to contain data or UI state
 - Bind context of this keyword in functions (DOM events)
     - using => removes need to manually bind this keyword
-- setState inside function can change/update state of component
+- setState inside function can change state of component
 
 - run JS in {}
+- onChange runs every time there's a change in value
+- e.target grabs target element
