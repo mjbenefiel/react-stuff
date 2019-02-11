@@ -19,10 +19,6 @@ Component state
     - using => removes need to manually bind this keyword
 - setState inside function can change state of component
 
-- run JS in {}
-- onChange runs every time there's a change in value
-- e.target grabs target element
-
 Single Page App (SPA)
 
 - only one HTML page served to browser
@@ -39,3 +35,9 @@ Props
 
 - Pass data from one component (parent) to child component
 - this.props -- this referencing component .props to access the props object on the component
+
+Misc
+
+- run JS in {}
+- onChange runs every time there's a change in value
+- e.target grabs target element
