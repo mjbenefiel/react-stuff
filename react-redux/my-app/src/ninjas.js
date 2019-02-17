@@ -1,9 +1,8 @@
-import React, { Component } from "react";
-
-class Ninjas extends Component {
-  render() {
+import React from "react";
+// ninjas is destructured
+const Ninjas = ({ninjas}) => {
+  
     // console.log(this.props);
-    const { ninjas } = this.props;
     const ninjaList = ninjas.map(ninja =>{
       return (
      <div className="ninja" key={ninja.id}>
@@ -18,7 +17,7 @@ class Ninjas extends Component {
       { ninjaList }
       </div>
     );
-  }
+
 }
 
 export default Ninjas;
