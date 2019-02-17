@@ -41,3 +41,21 @@ Misc
 - run JS in {}
 - onChange runs every time there's a change in value
 - e.target grabs target element
+
+Container Components
+
+- contain state
+- contain lifecycle hooks
+- not concerned with UI
+- use classes to create
+
+UI Components
+
+- don't contain state
+- receive data from props
+- only concerned with UI
+- use functions to create (stateless components)
+- props won't be automatically passed to it like with a class based component
+    - take props in as a parameter
+    - remove "this" -- not referring to instance of class, but to parameter
+- use when not worried about state, but focused primarily on UI
