@@ -18,6 +18,7 @@ Component state
 - Bind context of this keyword in functions (DOM events)
     - using => removes need to manually bind this keyword
 - setState inside function can change state of component
+- don't alter state outside of setState (IE, using push method)
 
 Single Page App (SPA)
 
@@ -41,6 +42,8 @@ Misc
 - run JS in {}
 - onChange runs every time there's a change in value
 - e.target grabs target element
+- error will throw if classes aren't using PascalCase
+- can pass down functions into components as props
 
 Container Components
 
