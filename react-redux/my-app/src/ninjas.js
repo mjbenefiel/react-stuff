@@ -4,6 +4,7 @@ const Ninjas = ({ninjas}) => {
   
     // console.log(this.props);
     const ninjaList = ninjas.map(ninja =>{
+      if (ninja.age > 25) {
       return (
      <div className="ninja" key={ninja.id}>
         <div>Name: {ninja.name} </div>
@@ -11,6 +12,9 @@ const Ninjas = ({ninjas}) => {
         <div>Belt: {ninja.belt} </div>
       </div>
       )
+      } else {
+        return null
+      }
     })
     return (
       <div className="ninja-list">
