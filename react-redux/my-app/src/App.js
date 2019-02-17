@@ -1,16 +1,20 @@
-import React, { Component } from 'react';
-import Ninjas from './ninjas';
-
-
+import React, { Component } from "react";
+import Ninjas from "./ninjas";
 
 class App extends Component {
+  state = {
+    ninjas: [
+      { name: "Ryu", age: 30, belt: "black", id: 1 },
+      { name: "Yoshi", age: 29, belt: "blue", id: 2 },
+      { name: "Wren", age: 27, belt: "pink", id: 3 }
+    ]
+  };
   render() {
     return (
       <div className="App">
         <h1>Test React App</h1>
         <p> Welcome </p>
-        <Ninjas name="Ryu" age="25" belt="black" />
-        <Ninjas name="Yoshi" age="26" belt="blue" />
+        <Ninjas ninjas= {this.state.ninjas} />
       </div>
     );
   }
