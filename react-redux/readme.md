@@ -63,3 +63,37 @@ UI Components
     - take props in as a parameter
     - remove "this" -- not referring to instance of class, but to parameter
 - use when not worried about state, but focused primarily on UI
+
+Using CSS in React
+
+- creating new css file for each file
+- index.css to apply to all files
+- css modules
+
+Lifecycle Methods
+
+- Every component goes through a lifecycle
+    - mounting
+        - component first created and mounts the DOM
+            - constructor 
+            - getDerivedStateFromProps
+                - triggers on first render
+        - render to DOM (required)
+        - componentDidMount()
+            - fires once component first mounts to DOM (great to get data from database)
+
+    - updating
+        - getDerivedStateFromProps
+        - shouldComponentUpdate
+            - compre new props with old props
+        - render
+        - getSnapshotBeforeUpdate
+            - passed to final update hook
+        - componentDidUpdate
+            - called after template is rendered to DOM
+            - fires once there's a change in state or props
+
+    - unmounting
+        - componentWillUnmount
+
+    Render, componentDidMount to get data, rarely use getDerivedStateFromProps
