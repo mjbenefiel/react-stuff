@@ -44,6 +44,7 @@ Misc
 - e.target grabs target element
 - error will throw if classes aren't using PascalCase
 - can pass down functions into components as props
+- wrapping event within anonymous function will prevent the event from automatically firing everytime there is a page load
 
 Container Components
 
