@@ -98,3 +98,11 @@ Lifecycle Methods
         - componentWillUnmount
 
     Render, componentDidMount to get data, rarely use getDerivedStateFromProps
+
+    React Router
+
+    - Request to 'about page' from navbar doesn't go to server. It goes to React router and injects the page into app.js
+
+    - Stops requests from going to server. Only injects the component it needs to. 
+
+    - <Route exact path="/" component={Home} /> matches exact path
