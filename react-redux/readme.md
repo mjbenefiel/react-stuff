@@ -52,6 +52,7 @@ Container Components
 - contain lifecycle hooks
 - not concerned with UI
 - use classes to create
+- automatically get props
 
 UI Components
 
