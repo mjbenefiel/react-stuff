@@ -106,3 +106,5 @@ Lifecycle Methods
     - Stops requests from going to server. Only injects the component it needs to. 
 
     - <Route exact path="/" component={Home} /> matches exact path
+
+    TEST
