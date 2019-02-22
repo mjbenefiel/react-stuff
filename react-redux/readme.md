@@ -50,6 +50,9 @@ Misc
 - error will throw if classes aren't using PascalCase
 - can pass down functions into components as props
 - wrapping event within anonymous function will prevent the event from automatically firing everytime there is a page load
+- A promise means "this action will complete at some point in time"
+    - .then() method fires once this action has completed
+
 
 Container Components
 
@@ -104,19 +107,23 @@ Lifecycle Methods
 
     Render, componentDidMount to get data, rarely use getDerivedStateFromProps
 
-    React Router
+React Router
 
-    - Request to 'about page' from navbar doesn't go to server. It goes to React router and injects the page into app.js
+- Request to 'about page' from navbar doesn't go to server. It goes to React router and injects the page into app.js
 
-    - Stops requests from going to server. Only injects the component it needs to. 
+- Stops requests from going to server. Only injects the component it needs to. 
 
-    - <Route exact path="/" component={Home} /> matches exact path
+- <Route exact path="/" component={Home} /> matches exact path
 
-    Link, NavLink
+Link, NavLink
 
-    - Link prevents default action from happening when clicking on anchor tag
-        - Will not make request server
-        - React-router-dom will take over and return requested component
-        - NavLink adds class of active
-            - Useful if you want to start applying different styles to links
+- Link prevents default action from happening when clicking on anchor tag
+    - Will not make request server
+    - React-router-dom will take over and return requested component
+    - NavLink adds class of active
+        - Useful if you want to start applying different styles to links
+
+Axios
+
+- HTTP request library
 
