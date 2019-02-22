@@ -107,4 +107,10 @@ Lifecycle Methods
 
     - <Route exact path="/" component={Home} /> matches exact path
 
-    TEST
+    Link, NavLink
+
+    - Link prevents default action from happening when clicking on anchor tag
+        - Will not make request server
+        - React-router-dom will take over and return requested component
+        - NavLink adds class of active
+            - Useful if you want to start applying different styles to links
