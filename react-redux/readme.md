@@ -34,7 +34,8 @@ Nesting Components
 
  Higher Order Component
 
- - Something that wraps another component and gives it extra powers
+ - Something that wraps another component and gives it extra features
+ - 
 
 Props
 
