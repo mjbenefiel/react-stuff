@@ -32,6 +32,10 @@ Nesting Components
     - IE, navbar component is nested within the root component
 - Great for keeping code modular
 
+ Higher Order Component
+
+ - Something that wraps another component and gives it extra powers
+
 Props
 
 - Pass data from one component (parent) to child component
@@ -114,3 +118,4 @@ Lifecycle Methods
         - React-router-dom will take over and return requested component
         - NavLink adds class of active
             - Useful if you want to start applying different styles to links
+
