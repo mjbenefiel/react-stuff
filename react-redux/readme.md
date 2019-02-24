@@ -136,3 +136,25 @@ Route Parameters
 Switch Tag <Switch>
 
 - Renders a route exclusively
+
+Redux
+
+- Central data store for all app data
+- Any component can access data from it
+- Makes state management easy
+
+Redux process
+
+1. Component
+    - Redux passes changes to component
+    - component subscribes to changes - props
+    - can decide you want to make a change in component and go to dispatch action
+ 
+2. Dispatch action
+    - actions that describe changes we want to make (add post, for example)
+    - with action, we can pass along an optional payload
+        - payload is any kind of data we want to pass along with the action
+    - action is passed to reducer
+3. Reducer
+    - reducer takes in the action/data and goes to central data store and updates the action from there. 
+    - reducer is the thing that updates the data store and all changes are made from there -- not directly through components
