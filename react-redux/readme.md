@@ -127,3 +127,8 @@ Axios
 
 - HTTP request library
 
+Route Parameters
+
+- Part of a URL that can change
+- Usually see them on URLs for individual records
+    - User Profile routes, for example
