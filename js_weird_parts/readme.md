@@ -12,4 +12,3 @@ Object Oriented Javascript and Prototypal Inheritance: Section 5.53
         - Inheritance
             - One object gets access to properties and methods of another object
         
-
