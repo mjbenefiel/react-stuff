@@ -10,3 +10,4 @@ function greet(whatToSay) {
 greet('Hi')('Tony');
 var sayHi = greet('Hi');
 sayHi('Tony')
+
