@@ -142,6 +142,7 @@ Redux
 - Central data store for all app data
 - Any component can access data from it
 - Makes state management easy
+- subscribe() just lets you know every time the store changes
 
 Redux process
 
@@ -151,6 +152,7 @@ Redux process
     - can decide you want to make a change in component and go to dispatch action
  
 2. Dispatch action
+    - passing action into reducer
     - actions that describe changes we want to make (add post, for example)
     - with action, we can pass along an optional payload
         - payload is any kind of data we want to pass along with the action
