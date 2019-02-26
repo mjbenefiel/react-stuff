@@ -18,3 +18,5 @@ Object Oriented Javascript and Prototypal Inheritance - Section 5.53
 - prototype chain
     - where we have access to a property or method amongst a sequence of objects that are connected via the proto property
 - Special reference in object that says where to look for other properties and methods - that's the prototype.
+- Prototype
+    - The prototype is an object that is associated with every function and object by default in JavaScript, where function's prototype property is accessible and modifiable and object's prototype property (aka attribute) is not visible.
