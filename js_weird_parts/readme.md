@@ -31,3 +31,13 @@ Object Oriented Javascript and Prototypal Inheritance - Section 5.53
         - One object gets access to properties and methods of another object. Child classes take all private fields and methods from the parent class. Child class can also add aditional fields of their own
     - polymorphism
         - The practice of designing objects to share behaviors and to be able to override shared behaviors with specific ones. (IE, calculating surface and perimeter of a circle, square and triangle)
+
+    - Everything that isn't a primitive has a prototype, except the base object in JS.
+
+    Reflection
+
+    - An object can look at itself, listing and changing its properties and methods
+
+    Extend
+
+    - Allows you to compose objects - don't need to always use prototype chain (_.extend(params) with underscore for example)

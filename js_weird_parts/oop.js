@@ -21,3 +21,7 @@ var jane = {
 
 jane.__proto__ = person;
 console.log(jane.getFullName())
+
+var a = {};
+var b = function() { };
+var c = []
