@@ -15,3 +15,5 @@ Object Oriented JavaScript
     - calls the constructor method
 
 - JS prototype model was original way we tend to create or emulate classes before the class keyword. JS is still working the way it was before the class keyword. Class keyword is syntactic sugar.
+
+- Prototype is like a map for the object type. It contains the functionality (different methods) for the object type.
