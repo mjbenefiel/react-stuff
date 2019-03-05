@@ -9,4 +9,7 @@ var userOne = {
       console.log(this.email, 'has logged out')
   }
 }; 
-console.log(userOne.login())
+
+userOne.age = 25
+
+console.log(userOne)
