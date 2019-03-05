@@ -13,3 +13,5 @@ Object Oriented JavaScript
     - creates a new empty object{}
     - set the value of 'this' to be the new empty object
     - calls the constructor method
+
+- Inheritance
