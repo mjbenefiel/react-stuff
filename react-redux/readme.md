@@ -160,3 +160,7 @@ Redux process
 3. Reducer
     - reducer takes in the action/data and goes to central data store and updates the action from there. 
     - reducer is the thing that updates the data store and all changes are made from there -- not directly through components
+
+Action creators
+
+- Functions that create actions. Good for separation of concerns once an app begins to scale in size. 
