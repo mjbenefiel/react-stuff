@@ -4,12 +4,14 @@
   "description": "Webpack",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "dev-server":"webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "webpack": "^4.29.6"
+    "webpack": "^4.29.6",
+    "webpack-dev-server": "^3.2.1"
   },
   "devDependencies": {
     "webpack-cli": "^3.2.3"

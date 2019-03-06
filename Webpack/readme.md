@@ -10,3 +10,6 @@ Webpack
    - Bundle speed (Webpack faster)
    - Bundle size (Webpack bigger in size than Browserify)
    - Difficulty of configuration (Webpack easier to configure)
+
+  webpack-dev-server
+    - Automatically takes care of changes
