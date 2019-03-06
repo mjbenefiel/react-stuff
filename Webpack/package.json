@@ -1,0 +1,17 @@
+{
+  "name": "webpack-refresh",
+  "version": "1.0.0",
+  "description": "Webpack",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.2.3"
+  }
+}
