@@ -1,5 +1,8 @@
-var add = function(a, b) {
-    return a + b
-}
+// import { add, subtract, multiply, divide } from "./script.js"
+import * as functions from "./script.js";
+import printName from "./script.js"
 
-console.log(add(34, 82))
+console.log(functions.add(5, 25))
+
+console.log(functions.divide(35, 25))
+printName("mike")
