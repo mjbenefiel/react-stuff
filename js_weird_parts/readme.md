@@ -48,3 +48,6 @@ Function Constructors
     - The this variable points to a new empy object, and that object is returned from the function automatically once it finishes execution. New operator makes the new object. Function constructors are used for adding properties and methods to that 'new' object.
 - "new" is an operator. An empty object is created.
 - Constructing object via function
+- All functions have a prototype
+    - Used only by the new operator
+    - Prototype property on function is not prototype of function; it's the proto of any objects created if you're using the function as a function constructor.
