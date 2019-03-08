@@ -9,3 +9,14 @@ printName("mike")*/
 
 const arrowFunction = (name) => name;
 console.log(arrowFunction("Hey"));
+
+const user = {
+    id: 1,
+    name: "Mike"
+}
+
+const advancedUser = {
+    ...user,
+    age: 34
+};
+console.log(advancedUser);
