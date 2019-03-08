@@ -17,8 +17,13 @@ Execution contexts, hoisting, scopes and closures in JS
             - created whenever a function is invoked
 
     Difference between global and function execution context?
-        - 
-        
-- Hoisting
-    - process of assigning variable declaration a default value of undefined during the creation phase
+        - Instead of creating global variable, function execution context creates an arguments object
 
+    Execution stack
+        - Any time a function is invoked, a new execution context is created and added to the execution stack. Whenever a function is finished running through creation and execution phases, it is popped off the execution stack.
+
+    Hoisting
+        - process of assigning variable declaration a default value of undefined during the creation phase
+
+    Closures
+  
