@@ -1,3 +1,5 @@
+import "./styles/styles.scss";
+
 // import { add, subtract, multiply, divide } from "./script.js"
 /* import * as functions from "./script.js";
 import printName from "./script.js"
