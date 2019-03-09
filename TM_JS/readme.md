@@ -27,62 +27,62 @@ TM JS
         - Set up memory space for variables and functions
         - Assign variable declarations a default value of “undefined” while placing any function declarations in memory
 
-    Execution stack
-        - Any time a function is invoked, a new execution context is created and added to the execution stack. Whenever a function is finished running through creation and execution phases, it is popped off the execution stack.
+- Execution stack
+    - Any time a function is invoked, a new execution context is created and added to the execution stack. Whenever a function is finished running through creation and execution phases, it is popped off the execution stack.
 
-    Hoisting
-        - process of assigning variable declaration a default value of undefined during the creation phase
+- Hoisting
+    - process of assigning variable declaration a default value of undefined during the creation phase
 
-    Scope chain
-        - Process of the JavaScript engine going one by one and checking each individual parent Execution Context if a variable doesn’t exist in the local Execution Context
+- Scope chain
+    - Process of the JavaScript engine going one by one and checking each individual parent Execution Context if a variable doesn’t exist in the local Execution Context
 
-    Closures
-     - The concept of a child function “closing” over the variable environment of its parent function
+- Closures
+    - The concept of a child function “closing” over the variable environment of its parent function
 
 <strong>Understanding the this keyword, call, apply, and bind in JavaScript</strong>
   
 - This keyword
     - The “this” keyword allows you to decide which object should be focal when invoking a function or a method.
     
-    5 rules
-        - Implicit binding
-        - Explicit binding
-        - new Binding
-        - window Binding
-        - Lexical Binding        
+5 rules
+    - Implicit binding
+    - Explicit binding
+    - new Binding
+    - window Binding
+    - Lexical Binding        
 
-    Always ask this question for this keyword: "Where is this function invoked?"
+Always ask this question for this keyword: "Where is this function invoked?"
 
-    Implicit binding (most common rule)
-        - Implicit binding says that when you call a function, and it's invoked, look to the left of the dot, and that's what the this keyword is invoking (IE, me.SayName() refers to me object)
+- Implicit binding (most common rule)
+    - Implicit binding says that when you call a function, and it's invoked, look to the left of the dot, and that's what the this keyword is invoking (IE, me.SayName() refers to me object)
 
-    Explicit binding with call, apply, bind
-        - .call()
-            - a method on every function that allows you to invoke the function specifying in what context the function will be invoked
-            - explicitly stating what "this" keyword is
-            - can pass along arguments one by one
-        - .apply()
-            - same thing as .call(), but it passes in array of arguments 
-        - .bind()
-            - same thing as .call(), but it will return new function you can invoke at a later time instead of invoking original function
-        - new binding
-            - Behind the scenes, JS will create brand new object and call it "this"
-        - window binding
-            - if none of the above rules apply, "this" keyword is going to default to window object, unless in strict mode, then it will be undefined
+- Explicit binding with call, apply, bind
+    - .call()
+        - a method on every function that allows you to invoke the function specifying in what context the function will be invoked
+        - explicitly stating what "this" keyword is
+        - can pass along arguments one by one
+    - .apply()
+        - same thing as .call(), but it passes in array of arguments 
+    - .bind()
+        - same thing as .call(), but it will return new function you can invoke at a later time instead of invoking original function
+    - new binding
+        - Behind the scenes, JS will create brand new object and call it "this"
+    - window binding
+        - if none of the above rules apply, "this" keyword is going to default to window object, unless in strict mode, then it will be undefined
             
-    Lexical binding
-       - with ES6 and =>, this is determined lexically
-        - Arrow functions don’t have their own this. Instead, just like with variable lookups, the JavaScript interpretor will look to the enclosing (parent) scope to determine what this is referencing.
-        - Without =>, we need to specify that we want the anonymous function we pass to .reduce() in order to be invoked in the context of user object. (IE, use .bind(this) at the end of object).
+- Lexical binding
+    - with ES6 and =>, this is determined lexically
+    - Arrow functions don’t have their own this. Instead, just like with variable lookups, the JavaScript interpretor will look to the enclosing (parent) scope to determine what this is referencing.
+    - Without =>, we need to specify that we want the anonymous function we pass to .reduce() in order to be invoked in the context of user object. (IE, use .bind(this) at the end of object).
 
-    These are the steps I take in order to figure out what it’s referencing.
-        - Look to where the function was invoked.
-        - Is there an object to the left of the dot? If so, that’s what the “this” keyword is referencing. If not, continue to #3.
-        - Was the function invoked with “call”, “apply”, or “bind”? If so, it’ll explicitly state what the “this” keyword is referencing. If not, continue to #4.
-        - Was the function invoked using the “new” keyword? If so, the “this” keyword is referencing the newly created object that was made by the JavaScript interpretor. If not, continue to #5.
-        - Is “this” inside of an arrow function? If so, its reference may be found lexically in the enclosing (parent) scope. If not, continue to #6.
-        - Are you in “strict mode”? If yes, the “this” keyword is undefined. If not, continue to #6.
-        - JavaScript is weird. “this” is referencing the “window” object.
+- These are the steps I take in order to figure out what it’s referencing.
+    - Look to where the function was invoked.
+    - Is there an object to the left of the dot? If so, that’s what the “this” keyword is referencing. If not, continue to #3.
+    - Was the function invoked with “call”, “apply”, or “bind”? If so, it’ll explicitly state
+    - Was the function invoked using the “new” keyword? If so, the “this” keyword is referencing the newly created object that was made by the JavaScript interpretor. If not, continue to #5.
+    - Is “this” inside of an arrow function? If so, its reference may be found lexically in the enclosing (parent) scope. If not, continue to #6.
+    - Are you in “strict mode”? If yes, the “this” keyword is undefined. If not, continue to #6.
+    - JavaScript is weird. “this” is referencing the “window” object.
 
-Event Loop
+- Event Loop
     - Call Stack (Async functions go to Web API) > Web API > Task Queue (Job Queue with promises, higher priority than TQ) > Call Stack
