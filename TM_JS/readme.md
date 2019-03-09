@@ -18,14 +18,14 @@ TM JS
         - function execution context
             - created whenever a function is invoked
 
-    Difference between global and function execution context?
-        - Instead of creating global variable, function execution context creates an arguments object
+- Difference between global and function execution context?
+    - Instead of creating global variable, function execution context creates an arguments object
 
-    Whenever a function execution context is created, the JS Engine will: 
-        - Create an arguments object
-        - Create an object called this
-        - Set up memory space for variables and functions
-        - Assign variable declarations a default value of “undefined” while placing any function declarations in memory
+- Whenever a function execution context is created, the JS Engine will: 
+    - Create an arguments object
+    - Create an object called this
+    - Set up memory space for variables and functions
+    - Assign variable declarations a default value of “undefined” while placing any function declarations in memory
 
 - Execution stack
     - Any time a function is invoked, a new execution context is created and added to the execution stack. Whenever a function is finished running through creation and execution phases, it is popped off the execution stack.
@@ -83,6 +83,7 @@ Always ask this question for this keyword: "Where is this function invoked?"
     - Is “this” inside of an arrow function? If so, its reference may be found lexically in the enclosing (parent) scope. If not, continue to #6.
     - Are you in “strict mode”? If yes, the “this” keyword is undefined. If not, continue to #6.
     - JavaScript is weird. “this” is referencing the “window” object.
-
+    
+<strong> The Event Loop </strong>
 - Event Loop
     - Call Stack (Async functions go to Web API) > Web API > Task Queue (Job Queue with promises, higher priority than TQ) > Call Stack
