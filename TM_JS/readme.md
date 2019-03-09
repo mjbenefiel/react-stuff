@@ -37,4 +37,32 @@ Execution contexts, hoisting, scopes and closures in JS
 
     Closures
      - The concept of a child function “closing” over the variable environment of its parent function
+
+Understanding the this keyword, call, apply, and bind in JavaScript
   
+- This keyword
+    - The “this” keyword allows you to decide which object should be focal when invoking a function or a method.
+    
+    4 rules
+        - Implicit binding
+        - Explicit binding
+        - new Binding
+        - window Binding
+
+    Always ask this question for this keyword: "Where is this function invoked?"
+
+        - Implicit binding (most common rule)
+            - Implicit binding says that when you call a function, and it's invoked, look to the left of the dot, and that's what the this keyword is invoking (IE, me.SayName() refers to me object)
+
+        - Explicit binding with call, apply, bind
+            - .call() -- explicitly stating what "this" keyword is
+                - can pass along arguments one by one
+            - .apply() -- passes in array of arguments 
+            - .bind() -- will return new function instead of invoking original function
+
+        - new binding
+            - Behind the scenes, JS will create brand new object
+
+        - window binding
+            - if none of the above rules apply, "this" keyword is going to default to window object, unless in strict mode, then it will be undefined
+            
