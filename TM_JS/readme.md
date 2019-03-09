@@ -44,7 +44,7 @@ TM JS
 - This keyword
     - The “this” keyword allows you to decide which object should be focal when invoking a function or a method.
     
-5 rules
+- 5 rules
     - Implicit binding
     - Explicit binding
     - new Binding
