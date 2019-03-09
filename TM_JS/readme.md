@@ -1,6 +1,6 @@
 TM JS
 
-Execution contexts, hoisting, scopes and closures in JS
+<strong>Execution contexts, hoisting, scopes and closures in JS</strong>
 
 - Execution context
     - Environment in which code is run
@@ -38,7 +38,7 @@ Execution contexts, hoisting, scopes and closures in JS
     Closures
      - The concept of a child function “closing” over the variable environment of its parent function
 
-Understanding the this keyword, call, apply, and bind in JavaScript
+<strong>Understanding the this keyword, call, apply, and bind in JavaScript</strong>
   
 - This keyword
     - The “this” keyword allows you to decide which object should be focal when invoking a function or a method.
@@ -64,10 +64,8 @@ Understanding the this keyword, call, apply, and bind in JavaScript
             - same thing as .call(), but it passes in array of arguments 
         - .bind()
             - same thing as .call(), but it will return new function you can invoke at a later time instead of invoking original function
-
         - new binding
             - Behind the scenes, JS will create brand new object and call it "this"
-
         - window binding
             - if none of the above rules apply, "this" keyword is going to default to window object, unless in strict mode, then it will be undefined
             
