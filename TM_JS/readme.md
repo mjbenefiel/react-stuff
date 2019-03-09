@@ -83,3 +83,6 @@ TM JS
         - Is “this” inside of an arrow function? If so, its reference may be found lexically in the enclosing (parent) scope. If not, continue to #6.
         - Are you in “strict mode”? If yes, the “this” keyword is undefined. If not, continue to #6.
         - JavaScript is weird. “this” is referencing the “window” object.
+
+Event Loop
+    - Call Stack (Async functions go to Web API) > Web API > Task Queue (Job Queue with promises, higher priority than TQ) > Call Stack
