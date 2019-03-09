@@ -42,6 +42,7 @@ TM JS
         - Process of the JavaScript engine going one by one and checking each individual parent Execution Context if a variable doesn’t exist in the local Execution Context
 
     Closures
+    
      - The concept of a child function “closing” over the variable environment of its parent function
 
 <strong>Understanding the this keyword, call, apply, and bind in JavaScript</strong>
