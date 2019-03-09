@@ -43,26 +43,45 @@ Understanding the this keyword, call, apply, and bind in JavaScript
 - This keyword
     - The “this” keyword allows you to decide which object should be focal when invoking a function or a method.
     
-    4 rules
+    5 rules
         - Implicit binding
         - Explicit binding
         - new Binding
         - window Binding
+        - Lexical Binding        
 
     Always ask this question for this keyword: "Where is this function invoked?"
 
-        - Implicit binding (most common rule)
-            - Implicit binding says that when you call a function, and it's invoked, look to the left of the dot, and that's what the this keyword is invoking (IE, me.SayName() refers to me object)
+    Implicit binding (most common rule)
+        - Implicit binding says that when you call a function, and it's invoked, look to the left of the dot, and that's what the this keyword is invoking (IE, me.SayName() refers to me object)
 
-        - Explicit binding with call, apply, bind
-            - .call() -- explicitly stating what "this" keyword is
-                - can pass along arguments one by one
-            - .apply() -- passes in array of arguments 
-            - .bind() -- will return new function instead of invoking original function
+    Explicit binding with call, apply, bind
+        - .call()
+            - a method on every function that allows you to invoke the function specifying in what context the function will be invoked
+            - explicitly stating what "this" keyword is
+            - can pass along arguments one by one
+        - .apply()
+            - same thing as .call(), but it passes in array of arguments 
+        - .bind()
+            - same thing as .call(), but it will return new function you can invoke at a later time instead of invoking original function
 
         - new binding
-            - Behind the scenes, JS will create brand new object
+            - Behind the scenes, JS will create brand new object and call it "this"
 
         - window binding
             - if none of the above rules apply, "this" keyword is going to default to window object, unless in strict mode, then it will be undefined
             
+    Lexical binding
+        - with ES6 and =>, this is determined lexically
+        - Arrow functions don’t have their own this. Instead, just like with variable lookups, the JavaScript interpretor will look to the enclosing (parent) scope to determine what this is referencing.
+        - Without =>, we need to specify that we want the anonymous function we pass to .reduce() in order to be invoked in the context of user object. (IE, use .bind(this) at the end of object).
+
+    These are the steps I take in order to figure out what it’s referencing.
+
+        - Look to where the function was invoked.
+        - Is there an object to the left of the dot? If so, that’s what the “this” keyword is referencing. If not, continue to #3.
+        - Was the function invoked with “call”, “apply”, or “bind”? If so, it’ll explicitly state what the “this” keyword is referencing. If not, continue to #4.
+        - Was the function invoked using the “new” keyword? If so, the “this” keyword is referencing the newly created object that was made by the JavaScript interpretor. If not, continue to #5.
+        - Is “this” inside of an arrow function? If so, its reference may be found lexically in the enclosing (parent) scope. If not, continue to #6.
+        - Are you in “strict mode”? If yes, the “this” keyword is undefined. If not, continue to #6.
+        - JavaScript is weird. “this” is referencing the “window” object.
