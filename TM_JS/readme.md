@@ -42,7 +42,7 @@ TM JS
         - Process of the JavaScript engine going one by one and checking each individual parent Execution Context if a variable doesn’t exist in the local Execution Context
 
     Closures
-    
+
      - The concept of a child function “closing” over the variable environment of its parent function
 
 <strong>Understanding the this keyword, call, apply, and bind in JavaScript</strong>
@@ -62,7 +62,6 @@ TM JS
     Always ask this question for this keyword: "Where is this function invoked?"
 
     Implicit binding (most common rule)
-
         - Implicit binding says that when you call a function, and it's invoked, look to the left of the dot, and that's what the this keyword is invoking (IE, me.SayName() refers to me object)
 
     Explicit binding with call, apply, bind
