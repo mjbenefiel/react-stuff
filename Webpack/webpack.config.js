@@ -21,7 +21,33 @@ module.exports = {
                     "css-loader",
                     "sass-loader"
                 ]
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg)/i,
+                use: [
+                    "file-loader",
+                    {
+                        loader: "image-webpack-loader",
+                        options: {
+                            gifsicle: {
+                                interlanced: false
+                            },
+                            optipng: {
+                                optimizationlevel: 7
+                            },
+                            pngquant: {
+                                quality: "65-90",
+                                speed: 4
+                            },
+                            mozjpeg: {
+                                progressive: true,
+                                quality: 65
+                            }
+                        }
+                    }
+                ]
             }
+
         ]
     }
 };

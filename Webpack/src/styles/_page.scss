@@ -10,4 +10,15 @@
         font-family: sans-serif;
         padding: 0;
     }
+
+    &__image {
+        height: 50vh;
+
+        &--dog {
+            background: url("./../public/images/download.jpg");
+            background-repeat: none;
+            background-size: contain;
+
+        }
+    }
 }

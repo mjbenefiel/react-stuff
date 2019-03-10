@@ -13,3 +13,6 @@ Webpack
 
   webpack-dev-server
     - Automatically takes care of changes
+
+  Background Images
+    - Will not load without image loaders with React or scss. Link would be different in bundle file.
