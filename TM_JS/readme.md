@@ -127,3 +127,12 @@ Always ask this question for this keyword: "Where is this function invoked?"
     - Whenever you have an async function, it implicitly returns a promise
     - When you add async to a function it does two things. It makes it so the function itself returns (or wraps what gets returned in) a promise and makes it so you can use await inside of it.
     - Try/Catch
+
+<strong>Prototype</strong>
+
+- Prototype
+    - property on a function that points to an object (every function has a proto)
+    - allows us to share methods across all instances of a function
+
+- Enumerable properties
+    - Those properties whose internal enumerable flag is set to true, which is the default for properties created via simple assignment or via a property initializer (properties defined via Object.defineProperty and such default enumerable to false)
