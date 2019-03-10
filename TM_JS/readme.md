@@ -134,5 +134,15 @@ Always ask this question for this keyword: "Where is this function invoked?"
     - property on a function that points to an object (every function has a proto)
     - allows us to share methods across all instances of a function
 
+- Functional instantiation 
+
+- Functional instantiation with shared methods
+
+- Object.create
+    - Allows you to create an object which will delegate to another object on failed lookups
+
 - Enumerable properties
     - Those properties whose internal enumerable flag is set to true, which is the default for properties created via simple assignment or via a property initializer (properties defined via Object.defineProperty and such default enumerable to false)
+
+- One thing you might have never thought about is how does every instance of an array have all of those built in methods (splice, slice, pop, etc)?
+    - it’s because those methods live on Array.prototype and when you create a new instance of Array
