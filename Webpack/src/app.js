@@ -9,7 +9,12 @@ var anotherCustomElement = <h1>
 
 ReactDOM.render(anotherCustomElement, document.getElementById("app"))
 
+const array = [5, 50, 500];
+const ourNumber = array.find((number) => {
+    return number > 10;
+});
 
+console.log(ourNumber);
 
 
 /*import "./styles/styles.scss";
