@@ -87,3 +87,25 @@ Always ask this question for this keyword: "Where is this function invoked?"
 <strong> The Event Loop </strong>
 - Event Loop
     - Call Stack (Async functions go to Web API) > Web API > Task Queue (Job Queue with promises, higher priority than TQ) > Call Stack
+
+<strong>Async JavaScript: From Callbacks, to Promises, to Async/Await</strong>
+
+- Higher order function
+    - Function that receives another function as its argument. Function you're passing in as the Arg is called a callback.
+
+- Callback usage
+    - Allows you to delay execution of a function until a particular time later on
+
+- Callback hell
+
+- Inversion of control
+
+- Promises
+    - How do you create a promise?
+    - How do you change the status of a promise?
+    - How do you listen for when the status of a promise changes?
+
+- Async/Await
+    - Whenever you have an async function, it returns a promise
+    - Try/Catch
+    
