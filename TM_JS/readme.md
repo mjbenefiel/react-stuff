@@ -94,18 +94,33 @@ Always ask this question for this keyword: "Where is this function invoked?"
     - Function that receives another function as its argument. Function you're passing in as the Arg is called a callback.
 
 - Callback usage
-    - Allows you to delay execution of a function until a particular time later on
+    - Abstraction over turning one value into another (.map, .filter)
+    - Allows you to delay execution of a function until a particular time, or until we have the data we need.
 
 - Callback hell
+    - nested callbacks within nested callbacks
+        - solution is to modularize code
 
 - Inversion of control
+    - When you write a callback, you’re assuming that the program you’re giving the callback to is responsible and will call it when (and only when) it’s supposed to.
 
 - Promises
+    - The eventual result of an asynchronous operation
+    - Promises exist to make the complexity of making async requests more manageable
+    - A promise can be in three states
+        - pending, fulfilled, rejected
     - How do you create a promise?
+        - Create a new instance of a promise
     - How do you change the status of a promise?
+        - The Promise constructor takes a single argument, a callback function. This function is going to be passed two arguments, resolve and reject.
+            - resolve - a function that allows you to change the status of the promise to fulfilled
+            - reject - a function that allows you to change the status of a promise to rejected
     - How do you listen for when the status of a promise changes?
+        - Once you create a promise, you’ll pass the function you want to run if the async request is successful to .then. You’ll pass the function you want to run if the async request fails to .catch.
+        - When the status of the promise changes to fulfilled, the function that was passed ot .then will get invoked.
+        - When the status of a promise changes to rejected, the function that was passed to .catch will be invoked
 
 - Async/Await
-    - Whenever you have an async function, it returns a promise
+    - Whenever you have an async function, it implicitly returns a promise
+    - When you add async to a function it does two things. It makes it so the function itself returns (or wraps what gets returned in) a promise and makes it so you can use await inside of it.
     - Try/Catch
-    
