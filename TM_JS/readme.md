@@ -93,6 +93,9 @@ Always ask this question for this keyword: "Where is this function invoked?"
 - Higher order function
     - Function that receives another function as its argument. Function you're passing in as the Arg is called a callback.
 
+- Callback function
+    - callback is a function that is to be executed after another function has finished executing
+
 - Callback usage
     - Abstraction over turning one value into another (.map, .filter)
     - Allows you to delay execution of a function until a particular time, or until we have the data we need.
