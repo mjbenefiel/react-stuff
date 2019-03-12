@@ -147,8 +147,13 @@ Always ask this question for this keyword: "Where is this function invoked?"
 - One thing you might have never thought about is how does every instance of an array have all of those built in methods (splice, slice, pop, etc)?
     - it’s because those methods live on Array.prototype and when you create a new instance of Array
 
-    <strong> Private and Public Class Fields </strong>
+<strong> Private and Public Class Fields </strong>
 
-    - Class Fields Proposal will allow you to add instance properties directly as a property on the class without having to use the constructor method.
+- Class Fields Proposal will allow you to add instance properties directly as a property on the class without having to use the constructor method.
 
-    - Can create private field using #
+- Can create private field using #
+
+<strong> JS inheritance and the prototype chain </strong>
+
+- class SubClass extends BaseClass {}
+- super() calls the constructor function of the class we're extending
