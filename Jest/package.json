@@ -4,7 +4,7 @@
   "description": "Jest",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "Jest"
   },
   "keywords": [],
   "author": "",
