@@ -25,3 +25,17 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+<strong>Notes</strong>
+- Drag Dots anchor: for moving the toolbar to somewhere it’s not blocking anything
+- Continue: continue the debugging session
+- Step over: execute code line by line, skipping functions
+- Step into: execute code line by line, going inside functions
+- Step out: if already inside a function, this command will take you out
+- Restart: restarts the debugging session
+- Stop: stops the debugging session.
+
+- Variables: displays local and global variables within the current scope (i.e. at the point of execution)
+- Watch: you can manually add expressions of variables you want to monitor
+- Call Stack: displays a call stack of the highlighted code
+- Breakpoints: displays a list of files with breakpoints, along with their line numbers.
