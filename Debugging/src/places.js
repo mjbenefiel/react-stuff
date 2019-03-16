@@ -4,7 +4,7 @@ module.exports = {
   places,
 
   addPlace: (city, country) => {
-    const id = ++places.length;
+    const id = places.length + 1;
     let numType = 'odd';
     if (id % 2) {
       numType = 'even';
@@ -15,6 +15,6 @@ module.exports = {
   },
 };
 
-module.exports.addPlace('Mombasa', 'Kenya');
+/* module.exports.addPlace('Mombasa', 'Kenya');
 module.exports.addPlace('Kingston', 'Jamaica');
-module.exports.addPlace('Cape Town', 'South Africa');
+module.exports.addPlace('Cape Town', 'South Africa');*/
