@@ -3,6 +3,10 @@ const { places, addPlace } = require('../src/places');
 
 describe('place', () => {
 
+beforeEach(() => {
+  places.length = 0;
+})
+
   it('can add a place', () => {
     addPlace('Nairobi', 'Kenya');
     assert.equal(places.length, 1);
@@ -11,6 +15,10 @@ describe('place', () => {
     assert.equal(places[0].country, 'Kenya');
     assert.equal(places[0].numType, 'odd');
   });
+
+  beforeEach(() => {
+  places.length = 0;
+})
 
   it('can add two places', () => {
     addPlace('Cape Town', 'South Africa');
