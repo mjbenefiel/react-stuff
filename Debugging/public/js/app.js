@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
   // Load DOM roots
   const el = $('#app');
-  const placesTable = $('#places-table');
+  // const placesTable = $('#places-table');
 
   // Initialize empty places array
   const places = [];
@@ -50,6 +50,7 @@ window.addEventListener('load', () => {
       },
     });
     // Display Places Table
+     const placesTable = $('#places-table');
     const tableHtml = placesTableTemplate({ places });
     placesTable.html(tableHtml);
     $('.submit').on('click', () => {
