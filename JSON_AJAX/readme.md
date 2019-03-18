@@ -6,4 +6,5 @@ JSON | AJAX
 - AJAX
     - Asynchronous JavaScript and XML
     - Process of sending/receiving data on the fly without page reload
+    - Used for retrieving data in databases
 
