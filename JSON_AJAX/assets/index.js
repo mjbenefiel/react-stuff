@@ -1,4 +1,7 @@
-var ourRequest = new XMLHttpRequest();
+var btn = document.getElementById("btn");
+
+btn.addEventListener("click", () => {
+  var ourRequest = new XMLHttpRequest();
 ourRequest.open(
   "GET",
   "https://learnwebcode.github.io/json-example/animals-1.json"
@@ -6,7 +9,11 @@ ourRequest.open(
 ourRequest.onload = () => {
   // console.log(ourRequest.responseText);
   var ourData = JSON.parse(ourRequest.responseText);
-  console.log(ourData[0])
+  console.log(ourData[0]);
 };
 
 ourRequest.send();
+
+});
+
+
