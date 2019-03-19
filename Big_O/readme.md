@@ -4,6 +4,7 @@ Algorithms and Data Structures | Big O Notation
     - Way of formalized fuzzy counting
     - Allows us to talk formally about how the runtime of an algorithm grows as input grows
     - Focus on trends, not minute details
+    - Talking about worst case scenario
 
     - We say that an algorithm is O(f(n)) if the number of simple operations the computer has to do is eventually less than a constant f(n), as n increases
         - f(n) could be linear (f(n) = n)
@@ -15,5 +16,20 @@ Algorithms and Data Structures | Big O Notation
     - Different machines will record different times
     - Same machine will record different times
 
-- Counting Operations
+- Simplifying Big O Operations
+    - Constants don't matter
+        - ie, don't use 0(2n), just use O(n), don't use O(500), just use O(1)
+    - Smaller terms don't matter
+
+- Big O Shorthands
+    - Arithmetic operations are constant
+    - Variable assignment is constant
+    - Accessing elements in an array (by index) or object (by key) is constant
+    - In a loop, the complexity is the length of the loop times the complexity of whatever happens inside the loop
+
+- O(1) - Constant; best run time. Flat.
+- O(log n)
+- O(n) - Linear; okay run time
+- O(nlog n)
+- O(n2) - Quadratic; worst run time
 
