@@ -33,3 +33,15 @@ Algorithms and Data Structures | Big O Notation
 - O(nlog n)
 - O(n2) - Quadratic; worst run time
 
+- Space Complexity
+    - The amount of additional memory we need to allocate in order to run the code in our algorithm
+
+- Auxillary space complexity
+    - Space required by the algorithm, not including space taken up by the inputs
+
+- Space Complexity rules of thumb
+    - Most primitives (booleans, numbers, undefined, null) are constant space
+    - Strings require O(n) space (where n is the string length)
+    - Reference types are generally O(n), where n is the length (for arrays) or the number of keys (objects)
+
+    
