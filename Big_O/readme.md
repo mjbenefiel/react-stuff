@@ -58,3 +58,21 @@ Algorithms and Data Structures | Big O Notation
 - Big O can give us high level understanding of the time or space complexity of an algorithm
 - Big O doesn't care about precision, but general trends
 - The time or space complexity (as measured by Big O) depends only on the algorithm, not the hardware used to run the algorithm
+
+- Built-in data structures
+    - Objects
+        - Unordered, key-value pairs
+        - Used for when you don't need order
+        - When you need fast access / insertion and removal
+            - Insertion - O(1)
+            - Removal - O(1)
+            - Searching - O(n)
+            - Access - O(1)
+        - Object Methods
+            - Object.keys - O(n)
+            - Object.values - O(n)
+            - Object.entries - O(n)
+            - hasOwnProperty - O(1)
+
+    - Arrays
+        - 
