@@ -44,4 +44,17 @@ Algorithms and Data Structures | Big O Notation
     - Strings require O(n) space (where n is the string length)
     - Reference types are generally O(n), where n is the length (for arrays) or the number of keys (objects)
 
-    
+- Logarithms
+    - Inverse of exponentiation
+        - log2(8) = 3 // 2^3 = 8
+    - log = log2
+    - The logarithm of a number roughly measures the number of times you can divide that number by 2 before you get a value that's less than or equal to one
+        - 8 / 2 = 4 / 2 = 2 / 2 = 1 (answer is 3) log(8) = 3
+    - Certain searching algorithms have log time complexity
+    - Efficient sorting algorithms involves log
+    - Recursion sometimes involves log space complexity
+
+- To analyze the performance of an algorithm, we use Big O Notation
+- Big O can give us high level understanding of the time or space complexity of an algorithm
+- Big O doesn't care about precision, but general trends
+- The time or space complexity (as measured by Big O) depends only on the algorithm, not the hardware used to run the algorithm
