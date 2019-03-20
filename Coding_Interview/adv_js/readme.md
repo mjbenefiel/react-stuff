@@ -56,3 +56,11 @@ Adv JS Prep
         - The lifetime of a variable. ie, where that variable is visible and available for you to use in your code
             - Global scope
             - Local scope
+            - Block scope
+
+- What is variable hoisting?
+    - Automatic hoisting of var declaration to the top of its enclosing scope
+    - declarations (var and function) are put in memory at compile time
+
+- What is the scope chain?
+    - Scope chain is defined lexically, ie, defined in the order in which the code is written in the file

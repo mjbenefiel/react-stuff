@@ -14,3 +14,33 @@ const moo = () => {
     console.log(foo)
 }
 moo()
+
+hoisted() // output: "Hoisted"
+function hoisted() {
+  console.log('Hoisted')
+}
+
+foo()
+function foo() {
+    var a = 1
+    console.log(a);
+    // a = 1
+}
+
+
+
+// variable is a container for storing data values
+//var
+
+// identifer
+// a;
+
+// variable declaration
+// var a;
+
+// initializor / operator
+// =
+
+// data type / value
+// "Hello", 0, true
+
