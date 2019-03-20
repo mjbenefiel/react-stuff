@@ -75,3 +75,11 @@ Adv JS Prep
     - Closures can refer to variables in outer scopes
     - It can refer to those outer variables, even after the outer function has returned
     - with for loop: When the closure is created, it doesn't get a copy of i. Closure points to actual/current value of i in the original scope.
+
+- "this" keyword
+    - can point to global object
+    - can point to object owner
+    - "this" is determined by the calling context. 
+
+- call, bind and apply functions
+    - 

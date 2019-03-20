@@ -39,6 +39,12 @@ console.log(foo[0]());
 console.log(foo[1]());
 console.log(foo[2]());
 
+(function(){
+  var a = 3;
+  
+})();
+console.log("a defined? " + (typeof a !== 'undefined'));
+
 // variable is a container for storing data values
 //var
 
