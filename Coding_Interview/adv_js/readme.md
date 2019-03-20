@@ -64,3 +64,14 @@ Adv JS Prep
 
 - What is the scope chain?
     - Scope chain is defined lexically, ie, defined in the order in which the code is written in the file
+    - variables are resolved in which the code is written on the page
+
+- What is an IIFE and why might you use it?
+    - Immediately invoked function expression
+    - Use it to avoid polluting global namespace
+
+- What are function closures?
+    - When a function returns a function, the function that is returned keeps a reference of any variables it needs to execute
+    - Closures can refer to variables in outer scopes
+    - It can refer to those outer variables, even after the outer function has returned
+    - with for loop: When the closure is created, it doesn't get a copy of i. Closure points to actual/current value of i in the original scope.

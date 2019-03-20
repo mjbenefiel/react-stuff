@@ -27,7 +27,17 @@ function foo() {
     // a = 1
 }
 
+// can utilize an IIFE or change var to let to change 
+// the scope and return 0, 1, 2 as expected
 
+var foo = [];
+for (var i = 0; i < 10; i++) {
+    foo[i] = function() { return i };
+}
+
+console.log(foo[0]());
+console.log(foo[1]());
+console.log(foo[2]());
 
 // variable is a container for storing data values
 //var
