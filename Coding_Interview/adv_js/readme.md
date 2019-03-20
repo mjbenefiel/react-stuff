@@ -41,3 +41,10 @@ Adv JS Prep
     - === checks for type and value equality
     - == checks for values of operators on left and right
         - == will utilize type coercion for (0 == '0')
+
+- What is the typeof NaN?
+    - NaN is unequal to itself
+    - NaN equal to anything is always false, even when compared to itself
+    - "abc"/4 would results in NaN
+    - NaN == NaN is false
+    - if "var a" is anything other than NaN a !== a false
