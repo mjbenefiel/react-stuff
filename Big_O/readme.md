@@ -18,7 +18,7 @@ Algorithms and Data Structures | Big O Notation
 
 - Simplifying Big O Operations
     - Constants don't matter
-        - ie, don't use 0(2n), just use O(n), don't use O(500), just use O(1)
+        - ie, don't use 0(2n), just use O(N), don't use O(500), just use O(1)
     - Smaller terms don't matter
 
 - Big O Shorthands
@@ -27,11 +27,11 @@ Algorithms and Data Structures | Big O Notation
     - Accessing elements in an array (by index) or object (by key) is constant
     - In a loop, the complexity is the length of the loop times the complexity of whatever happens inside the loop
 
-- O(1) - Constant; best run time. Flat.
+<strong>- O(1) - Constant; best run time. Flat.
 - O(log n)
-- O(n) - Linear; okay run time
+- O(N) - Linear; okay run time
 - O(nlog n)
-- O(n2) - Quadratic; worst run time
+- O(n2) - Quadratic; worst run time</strong>
 
 - Space Complexity
     - The amount of additional memory we need to allocate in order to run the code in our algorithm
@@ -41,8 +41,8 @@ Algorithms and Data Structures | Big O Notation
 
 - Space Complexity rules of thumb
     - Most primitives (booleans, numbers, undefined, null) are constant space
-    - Strings require O(n) space (where n is the string length)
-    - Reference types are generally O(n), where n is the length (for arrays) or the number of keys (objects)
+    - Strings require O(N) space (where n is the string length)
+    - Reference types are generally O(N), where n is the length (for arrays) or the number of keys (objects)
 
 - Logarithms
     - Inverse of exponentiation
@@ -66,12 +66,12 @@ Algorithms and Data Structures | Big O Notation
         - When you need fast access / insertion and removal
             - Insertion - O(1)
             - Removal - O(1)
-            - Searching - O(n)
+            - Searching - O(N)
             - Access - O(1)
         - Object Methods
-            - Object.keys - O(n)
-            - Object.values - O(n)
-            - Object.entries - O(n)
+            - Object.keys - O(N)
+            - Object.values - O(N)
+            - Object.entries - O(N)
             - hasOwnProperty - O(1)
 
     - Arrays
@@ -81,5 +81,15 @@ Algorithms and Data Structures | Big O Notation
             - Insertion - depends
                 - Inserting at end of array is constant. Inserting at beginning is linear, because everything has to be reindexed
             - Removal - depends
-            - Searching - O(n)
+            - Searching - O(N)
             - Access - O(1)
+    - Array Methods
+        - push - O(1)
+        - pop - O(1)
+        - shift - O(N)
+        - unshift - O(N)
+        - concat - O(N)
+        - splice - O(N)
+        - slice - O(N)
+        - sort - O(N * log N)
+        - forEach/map/filter/reduce/etc - O(N)
