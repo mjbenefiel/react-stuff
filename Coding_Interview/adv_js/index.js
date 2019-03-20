@@ -1,3 +1,5 @@
 
 mike = 1;
-console.log(global.mike)
+console.log(mike)
+
+console.log(null == undefined)
