@@ -75,4 +75,11 @@ Algorithms and Data Structures | Big O Notation
             - hasOwnProperty - O(1)
 
     - Arrays
-        - 
+        - Ordered lists
+        - Use them when you need order
+        - When you need fast access / insertion and removal
+            - Insertion - depends
+                - Inserting at end of array is constant. Inserting at beginning is linear, because everything has to be reindexed
+            - Removal - depends
+            - Searching - O(n)
+            - Access - O(1)
