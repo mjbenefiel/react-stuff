@@ -82,4 +82,29 @@ Adv JS Prep
     - "this" is determined by the calling context. 
 
 - call, bind and apply functions
-    - 
+    - Different ways of locking down and stabilizing what the "this" keyword means when executing different functions
+    - .call() calls the function and sets to where "this" points
+    - .apply() calls the function and sets to where "this points to, but passes in array of arguments
+
+- What is the prototype chain?
+    - Every object in JS has a prototype.
+    - When looking for a prop on an obj, JS will try to find the prop on an obj, and then on the obj proto, and so forth.
+    - Works like single parent inheritance class-based languages
+    - Updating a prop that previously existed on proto of object, adds it to the object and not to the proto of the obj
+    - Object.create() will create a new object and assign the proto that you pass in 
+
+- What is the difference between classical and prototypal inheritance in JS?
+    - Classical Inheritance
+        - Talking about the methods of OOP like Java and C++
+            - Class is a blueprint
+                - Create an instance of that class
+            - Class is the architectural diagram
+            - Instance is the house made to the specifications of that architectural diagram
+                - You can live in a house, not a diagram
+    - Prototypal Inheritance
+        - New objects are created from existing objects.
+            - No architectural diagram
+                - Build house based on an existing house
+    - There's a method in JS that emulates classical inheritance
+        - Constructor pattern / pseudo-classical pattern
+    - Prototypal Pattern

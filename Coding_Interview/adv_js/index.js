@@ -45,6 +45,23 @@ console.log(foo[2]());
 })();
 console.log("a defined? " + (typeof a !== 'undefined'));
 
+var a = function() {
+    console.log(this);
+}.bind(1)
+
+var mike = {
+    key: a
+}
+
+mike.key()
+
+"use strict";
+var a = function sayHello(last_name) {
+  console.log("Hello " + this + " " + last_name);
+}.bind("Asim");
+a("Hussain");
+
+
 // variable is a container for storing data values
 //var
 
