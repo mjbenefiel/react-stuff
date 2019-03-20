@@ -35,3 +35,9 @@ Adv JS Prep
     - Difference between dynamically typed / static typed language
         - in Static Typed language like Java, we'd define string something like "String a = 'moo'" -- it can hold strings and only strings
         - In JS, type of variable is determined dynamically at runtime (can hold string, number, etc., at any point in time)
+
+- Difference between == and ===
+    - loose equality vs strict equality
+    - === checks for type and value equality
+    - == checks for values of operators on left and right
+        - == will utilize type coercion for (0 == '0')
