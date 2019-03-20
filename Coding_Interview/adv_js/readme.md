@@ -1,5 +1,7 @@
 Adv JS Prep
 
+- Global object in node is 'global'
+
 - Use Strict Mode
     - Makes debugging easier
     - Allows you to place program/function in a strict context
@@ -48,3 +50,9 @@ Adv JS Prep
     - "abc"/4 would results in NaN
     - NaN == NaN is false
     - if "var a" is anything other than NaN a !== a false
+
+- What are the different scopes in JS?
+    - Scope
+        - The lifetime of a variable. ie, where that variable is visible and available for you to use in your code
+            - Global scope
+            - Local scope
