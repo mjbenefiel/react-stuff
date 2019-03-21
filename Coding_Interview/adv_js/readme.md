@@ -124,4 +124,19 @@ Adv JS Prep
     - Everything in JS - all OO principles are based on the prototype chain
 
 - What is Prototype OO pattern?
+    - Prototypal inheritance
+    - No function constructors. No "new" keyword. 
+    - Native to JS. No pseudo classes
+    - Basically connecting objects to objects via their prototypes
+
+- Pros of Constructor Pattern
+    - Most common
+    - Mimics OO syntax of Java, etc.
+    - Allows private variables
+
+- Pros of Prototype Pattern
+    - Very easy to understand. Not many moving parts.
+    
+
+
 

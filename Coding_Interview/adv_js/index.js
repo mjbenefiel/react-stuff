@@ -72,6 +72,15 @@ function Person (first_name, last_name){
 
 var theDude = new Person("Mike", "Benefiel")
 console.log(theDude.full_name())
+/////////////////////////////////////
+var Person = {
+  full_name: function (){
+    return this.first_name + '' + this.last_name;
+  }
+}
+
+var mike = Object.create(Person);
+console.log(mike)
 
 // variable is a container for storing data values
 //var
