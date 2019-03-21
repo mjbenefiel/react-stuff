@@ -157,3 +157,10 @@ Always ask this question for this keyword: "Where is this function invoked?"
 
 - class SubClass extends BaseClass {}
 - super() calls the constructor function of the class we're extending
+
+<strong> Composition vs Inheritance </strong>
+
+ - With inheritance, you structure your classes around what they are, a User, an Animal, a Dog, a Cat - all of those words encapsulate a meaning centered around what those things are. 
+ - Rather than thinking in terms of what things are, what if we think in terms of what things do?
+ - By favoring composition over inheritance and thinking in terms of what things do rather than what things are, you free yourself of fragile and tightly coupled inheritance structures.
+
