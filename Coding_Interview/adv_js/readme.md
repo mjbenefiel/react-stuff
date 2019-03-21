@@ -108,3 +108,20 @@ Adv JS Prep
     - There's a method in JS that emulates classical inheritance
         - Constructor pattern / pseudo-classical pattern
     - Prototypal Pattern
+
+- What is the Constructor OO pattern?
+    - function constructors
+        - Can mimic a class with a function constructor
+        - "new" keyword
+        - Every function has a prototype
+        - The "new" instance will point to the prototype of the function constructor
+        - Can add functions to the prototype of the function constructor, which is made available to the "new" instance
+    - function prototypes
+        - advantage of prototype approach, is if you create multiple instances, they all share the same prototype
+        - placing methods in prototype will reduce memory usage
+    - if you have your function in the body of the function constructor, and you only refer to the props that are passed into the constructor, you can simulate a private variable
+    - Encapsulation done with the Constructor functions
+    - Everything in JS - all OO principles are based on the prototype chain
+
+- What is Prototype OO pattern?
+

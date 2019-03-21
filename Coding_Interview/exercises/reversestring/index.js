@@ -23,7 +23,7 @@
 
 console.log(reverse("hello")) */
 
-const reverse = (str) => {
+/*const reverse = (str) => {
     debugger;
 return str.split('').reduce((reversed, character) => {
     return character + reversed
@@ -31,6 +31,17 @@ return str.split('').reduce((reversed, character) => {
 
 }
 
-reverse("racecar")
+reverse("racecar") */
+
+const reverse = (str) => {
+    let reversed = '';
+    for (var i = 0; i < str.length; i++) {
+        reversed = str[i] + reversed
+    }
+
+    return reversed;
+}
+
+console.log(reverse("hello"))
 
 module.exports = reverse;
