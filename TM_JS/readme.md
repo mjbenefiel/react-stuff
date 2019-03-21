@@ -160,7 +160,42 @@ Always ask this question for this keyword: "Where is this function invoked?"
 
 <strong> Composition vs Inheritance </strong>
 
- - With inheritance, you structure your classes around what they are, a User, an Animal, a Dog, a Cat - all of those words encapsulate a meaning centered around what those things are. 
- - Rather than thinking in terms of what things are, what if we think in terms of what things do?
- - By favoring composition over inheritance and thinking in terms of what things do rather than what things are, you free yourself of fragile and tightly coupled inheritance structures.
+- With inheritance, you structure your classes around what they are, a User, an Animal, a Dog, a Cat - all of those words encapsulate a meaning centered around what those things are. 
+- Rather than thinking in terms of what things are, what if we think in terms of what things do?
+- By favoring composition over inheritance and thinking in terms of what things do rather than what things are, you free yourself of fragile and tightly coupled inheritance structures.
+
+<strong> From IIFEs to CommonJS to ES6 Modules </strong>
+
+- Modules
+    - Imports (dependencies)
+    - code
+    - exports (interface of the module)
+    - Including only scripts pollutes the global namespace
+    - IIFE Module Pattern
+    - CommonJS
+        - Pros
+            - Node
+        - Cons
+            - Not in browsers
+            - Synchronous
+    - Module Bundler
+        - ie, Webpack
+    - ES Modules
+        - Now part of official ECMAscript specification
+        - Support Async
+        - "import" keyword
+        - "export" keyword
+        
+<strong> Creating your own JS Array </strong>
+
+
+
+
+
+
+
+
+
+
+
 
