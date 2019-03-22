@@ -12,6 +12,7 @@ function chunk(array, size) {
     let chunked = [];
     for (var i = 0; i <=array.length; i++) {
         const last = chunked[chunked.length - 1];
+    //    if last element does not exist !last
         if (!last || last.length === size){
             chunked.push([i])
         } else {
