@@ -186,7 +186,8 @@ Always ask this question for this keyword: "Where is this function invoked?"
         - "import" keyword
         - "export" keyword
         
-<strong> Creating your own JS Array </strong>
+Callback usage -- asynchronous requests, API calls
+Closure usage -- think something like a click counter on a website.
 
 
 
