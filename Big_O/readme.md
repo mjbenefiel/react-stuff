@@ -119,5 +119,17 @@ Algorithms and Problem Solving Patterns
         - Solve/simplify
             - If you can't solve the problem, solve a simpler problem -- don't get stuck and have nothing to show
         - Look back and refactor
-            - Important to try and improve your code
+            - Important to try and improve
+             your code
             
+- Problem Solving Patterns
+    - Frequency Counter
+        - Uses objects or sets to collect values/frequencies of values
+        - This can often avoid the need for nested loops or O(N^2) operations with arrays/strings
+        - Two loops is better than two nested loops
+    - Multiple Pointers
+    - Sliding Window
+    - Divide and Conquer
+    - Dynamic Programming
+    - Greedy Algorithms
+    - Backtracking
