@@ -136,6 +136,28 @@ Adv JS Prep
 
 - Pros of Prototype Pattern
     - Very easy to understand. Not many moving parts.
+
+What is CORS?
+    - Cross Origin Resource Sharing
+    - allows you to break the same origin policy of a browser
+    - selectively unblock certain requests
+        - Issue GET request
+        - Expects response same as origin domain that was sent with request or with *
+    - It's the response that is blocked. Not the request.
+    - Pre-flight request
+        - HTTP request with the method options
+        - PUT request would send options request
+            - Access-Control-Request-Method: PUT
+                - "Is this allowed to send this request?"
+                - Response issued
+                    - If allowed, origin domain will then actually issue the PUT request.
+                    
+
+        
+
+
+
+
     
 
 
