@@ -152,6 +152,12 @@ What is CORS?
                 - Response issued
                     - If allowed, origin domain will then actually issue the PUT request.
                     
+What is JSONP?
+    - JSONP predates CORS
+    - Created as pseudo-standard way to retrieve data from different domain
+    - Only works with GET requests
+    - Wrapped in a function
+    
 
         
 
