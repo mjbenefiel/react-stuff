@@ -128,6 +128,8 @@ Algorithms and Problem Solving Patterns
         - This can often avoid the need for nested loops or O(N^2) operations with arrays/strings
         - Two loops is better than two nested loops
     - Multiple Pointers
+        - Creating pointers or values that correspond to an index or position and move towards the beginning, end or middle based on a certain condition
+        - Very efficient for solving problems with minimal space complexity, as well.
     - Sliding Window
     - Divide and Conquer
     - Dynamic Programming
