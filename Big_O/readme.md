@@ -27,10 +27,16 @@ Algorithms and Data Structures | Big O Notation
     - Accessing elements in an array (by index) or object (by key) is constant
     - In a loop, the complexity is the length of the loop times the complexity of whatever happens inside the loop
 
+<strong>- O(1) - No matter how many elements we're working with, the algorithm/operation will always take the same amount of time.
+- O(log n) - You have this if doubling the number of elements you are iterating over doesn't double the amount of work. Always assume that searching algorithms are log(n)
+- O(N) - Iterating through all elements in a collection of data. If you see a for loop spanning from 0 to array.length, you probably have n, or linear runtime
+- O(nlog n) - You have this if doubling the number of elements you are iterating over doesn't double the amount of work. Always assume that any sorting operation is n*log(n)
+- O(n2) - Every element in a collection has to be compared to every other element. The handshake problem</strong>
+
 <strong>- O(1) - Constant; best run time. Flat.
-- O(log n)
+- O(log n) - Logarithmic 
 - O(N) - Linear; okay run time
-- O(nlog n)
+- O(nlog n) - Quasilinear
 - O(n2) - Quadratic; worst run time</strong>
 
 - Space Complexity
