@@ -189,6 +189,9 @@ Always ask this question for this keyword: "Where is this function invoked?"
 Callback usage -- asynchronous requests, API calls
 Closure usage -- think something like a click counter on a website.
 
+Destructuring
+    - Allows us to extract data from an object or array.
+
 
 
 
