@@ -46,3 +46,10 @@ Linearithmic - An algorithm with a linearithmic runtime is represented as O(n lo
 because it is the best runtime for sorting! Let’s see the merge-sort.
 
 Quadratic - Running times that are quadratic, O(n2), are the ones to watch out for. They usually don’t scale well when they have a large amount of data to process. Usually, they have double-nested loops that where each one visits all or most elements in the input. One example of this is a naïve implementation to find duplicate words on an array.
+
+Cubic - Cubic O(n3) and higher polynomial functions usually involve many nested loops.
+
+Exponential - Exponential runtimes, O(2n), means that every time the input grows by one the number of
+operations doubles. Exponential programs are only usable for a tiny number of elements (<100) otherwise it might not finish on your lifetime.
+
+Factorial - Factorial runtime, O(n!), is not scalable at all. Even with input sizes of ~10 elements, it will take a couple of seconds to compute.
