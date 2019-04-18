@@ -53,3 +53,9 @@ Exponential - Exponential runtimes, O(2n), means that every time the input grows
 operations doubles. Exponential programs are only usable for a tiny number of elements (<100) otherwise it might not finish on your lifetime.
 
 Factorial - Factorial runtime, O(n!), is not scalable at all. Even with input sizes of ~10 elements, it will take a couple of seconds to compute.
+
+Linked List - A list (or Linked List) is a linear data structure where each node is "linked" to the next.
+
+Singly Linked List - Each element or node is connected to the next one by a reference. When a node only has one connection it’s called singly linked list.
+
+Doubly Linked List - When each node has a connection to the next item and also the previous one, then we have a doubly linked list.
