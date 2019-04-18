@@ -44,3 +44,5 @@ algorithm has a linear running time when it iterates over all the elements in th
 
 Linearithmic - An algorithm with a linearithmic runtime is represented as O(n log n). This one is important
 because it is the best runtime for sorting! Let’s see the merge-sort.
+
+Quadratic - Running times that are quadratic, O(n2), are the ones to watch out for. They usually don’t scale well when they have a large amount of data to process. Usually, they have double-nested loops that where each one visits all or most elements in the input. One example of this is a naïve implementation to find duplicate words on an array.
