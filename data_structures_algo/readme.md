@@ -35,3 +35,12 @@ Most common time complexities
 • Factorial time: O(n!)
 
 Constant - Represented as O(1), it means that regardless of the input size the number of operations executed is always the same.
+
+Logarithmic - Represented in Big O notation as O(log n), when an algorithm has this running time it means that as the size of the input grows the number of operations grows very slowly. Logarithmic algorithms
+are very scalable. One example is the binary search. The binary search only works for sorted lists. It starts searching for an element on the middle of the array and then it moves to the right or left depending if the value you are looking for is bigger or smaller.
+
+Linear - Linear algorithms are one of the most common runtimes. It’s represented as O(n). Usually, an
+algorithm has a linear running time when it iterates over all the elements in the input.
+
+Linearithmic - An algorithm with a linearithmic runtime is represented as O(n log n). This one is important
+because it is the best runtime for sorting! Let’s see the merge-sort.
