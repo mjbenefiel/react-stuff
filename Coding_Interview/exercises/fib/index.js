@@ -9,6 +9,19 @@
 //   fib(4) === 3
 
 function fib(n) {
+  if (n < 2){
+      return n;
+  }
+
+  return fib(n - 1) + fib(n - 2)
+}
+
+console.log(fib(6)); 
+
+module.exports = fib;
+
+
+/*function fib(n) {
     const result = [0, 1];
 
     for (let i = 2; i <= n; i++){
@@ -20,6 +33,4 @@ function fib(n) {
     return result[n]
 }
 
-console.log(fib(6));
-
-module.exports = fib;
+console.log(fib(6)); */
